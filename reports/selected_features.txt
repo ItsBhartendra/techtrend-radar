@@ -1,0 +1,20 @@
+years_code
+Language_Bash/Shell (all shells)
+Database_MySQL
+Database_MongoDB
+Database_MariaDB
+Platform_Amazon Web Services (AWS)
+Platform_Kubernetes
+Platform_Microsoft Azure
+Platform_Homebrew
+DevEnvs_Android Studio
+OfficeStackAsync_Jira
+OfficeStackAsync_Confluence
+OfficeStackAsync_Miro
+AIModels_DeepSeek (R- Reasoning models)
+country_Brazil
+country_India
+country_Other
+country_Ukraine
+country_United Kingdom of Great Britain and Northern Ireland
+country_United States of America

@@ -12,3 +12,8 @@ https://github.com/StackExchange/Survey
 
 Limitation: survey respondents are a self-selected sample of developers,
 not the whole IT industry.
+
+## Progress
+- [x] Data exploration (Stack Overflow Developer Survey, 2019/2021/2023/2025)
+- [x] Cleaning, scaling (Min-Max, standardisation), PCA, feature selection
+      (correlation filter, chi-square)

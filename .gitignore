@@ -7,3 +7,4 @@ data/raw/
 data/*.zip
 data/*.csv
 .DS_Store
+data/processed/
