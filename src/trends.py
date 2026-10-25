@@ -6,6 +6,7 @@ from sklearn.linear_model import LinearRegression
 from sklearn.model_selection import LeaveOneOut, cross_val_score
 from sklearn.pipeline import make_pipeline
 from sklearn.preprocessing import PolynomialFeatures
+from sklearn.preprocessing import StandardScaler
 
 LANG_COLS = ["LanguageHaveWorkedWith", "LanguageWorkedWith"]
 
@@ -51,3 +52,12 @@ def loo_mse(x, y, degree):
     scores = cross_val_score(poly_model(degree), x, y, cv=LeaveOneOut(),
                              scoring="neg_mean_squared_error")
     return -scores.mean()
+
+
+def stable_poly_model(degree):
+    """Same polynomial model, but rescales x and its powers first.
+    This avoids numerical blow-ups at high degrees."""
+    return make_pipeline(StandardScaler(),
+                         PolynomialFeatures(degree, include_bias=False),
+                         StandardScaler(),
+                         LinearRegression())
